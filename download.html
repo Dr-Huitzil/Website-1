@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Descarga</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--   navigation -->
+  <section class="subheader">
+    <nav>
+      <a href="https://underthegazebo.com/index.html"> <img src="images/artboard-1-8.png" alt="logo"> </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="download.html"> Download </a></li>
+          <li><a href="donate.html"> Donate </a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <!-- download menu -->
+  <section class="download-menu">
+    <h1>Download</h1>
+    <p>Plewase select the amount of Ram you would like to download. One cannot simply download too much RAM</p>
+  </section>
+
+  <!-- images with options -->
+  <section class="options">
+    <div class="row">
+      <div class="options-col">
+        <img class="opic" src="images/132-1329650_ram-stick-png-random-access-memory-clipart-transparent.png"
+          alt="opic">
+        <h2> 4GB </h2>
+        <p>
+          DDR4-2400 <br>
+          10-12-10-27 <br>
+          1.65V <br>
+        </p>
+        <button class="btn" onclick="window.location.href='downloadtwo.html'">
+          Select Plan
+        </button>
+      </div>
+      <div class="options-col">
+        <img class="opic" src="images/132-1329565_ram-stick-png-ram-png-transparent-png.png" alt="opic">
+        <h2> 8GB </h2>
+        <p>
+          DDR4-2400 <br>
+          10-12-10-27 <br>
+          1.65V <br>
+        </p>
+        <button class="btn" onclick="window.location.href='downloadtwo.html'">
+          Select Plan
+        </button>
+      </div>
+      <div class="options-col">
+        <img class="opic" src="images/234-2344356_ram-png-transparent-image-4gb-2133mhz-crucial-ddr4.png" alt="opic">
+        <h2> 16GB </h2>
+        <p>
+          DDR4-2400 <br>
+          10-12-10-27 <br>
+          1.65V <br>
+        </p>
+        <button class="btn" onclick="window.location.href='downloadtwo.html'">
+          Select Plan
+        </button>
+      </div>
+      <div class="options-col">
+        <img class="opic" src="images/crucial-ddr4-ballistix-sport-1-large.png" alt="opic">
+        <h2> 32GB </h2>
+        <p>
+          DDR4-2400 <br>
+          10-12-10-27 <br>
+          1.65V <br>
+        </p>
+        <button class="btn" onclick="window.location.href='downloadtwo.html'">
+          Select Plan
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="warning">
+    <div class="card text-center">
+      <div class="card-body">
+        <h2>WARNING</h2>
+        <p>
+          Despite it seeming like a very very cool deal to download ram online, Remember that it is still very dangerous
+          to download unknown files from very unknown sources. Take this excerpt from this wikipideia page that i found
+          that speaks about online downloads<br>
+          <i>
+            <a href="https://www.wikihow.com/Know-when-It-Is-Safe-to-Download-Something">
+              "if you're downloading a file from a very basic site <br> there's a higher chance that the site will
+              have a virus hidden in its downloadable files <br> than from a site that looks like it's been made from
+              years of dedicated web designers." - wikiHow
+          </i>
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <a href="https://csumb.edu">
+      <img src="images/CSUMB-Logo-Color-Variation_White.jpg" class="icon-style" alt="csumb-logo">
+    </a>
+  </section>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+</body>
+
+</html>

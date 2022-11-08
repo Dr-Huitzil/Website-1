@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title> de que se trata </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--   navigation -->
+  <section class="subheader">
+    <nav>
+      <a href="https://underthegazebo.com/index.html"> <img src="images/artboard-1-8.png" alt="logo"> </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="download.html"> Download </a></li>
+          <li><a href="donate.html"> Donate </a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <!-- body     -->
+  <section class="theBody">
+    <div class="theHeader">
+      <h1> About </h1>
+    </div>
+    <div class="theText">
+      <p>
+        Computers have a CPU. CPU's follow instructions. Computer programmers write these instructions in a text
+        editor
+        in a human readable form. They then use a program called a "compiler" which changes human readable computer
+        instructions into something the computer can under stand (which is numbers). The compiler also saves those
+        numbers (list of instructions) to a hard disk as an executable file (a program). <br><br>
+
+        When a program is opened to be executed, the instructions in the executable file are copied from the hard disk
+        into memory. So basically there is a list of instructions in memory now; each instruction is stored one after
+        the other. The CPU then just goes down the list and performs each instruction. <br><br>
+
+        At this point you're probably asking, "why can't that be accomplished without RAM and just read the
+        instructions
+        from the hard drive?". Well, that's theoretically possible, but it would be ridiculously slow (hard drives are
+        mechanical; RAM is electrical). Also, I lied. The CPU doesn't "simply" go down a list of instructions. It does
+        do that, until it's instructed to jump somewhere else in the instruction list. And this jumping around is the
+        need for RAM... <br><br>
+
+        There is a mechanical arm on hard disks that has to move back and forth to read data. This is a very slow
+        process compared to RAM which has no moving parts. And it's even slower when the arm has to "jump" around (as
+        opposed to reading files sequentially). So instead of having the CPU jump around reading stuff from the hard
+        drive, the instructions are copied into memory, because RAM is much faster at Randomly Accessing data.
+        <br><br>
+
+        edit: I know what your next question will be. "well, don't you have to wait for the hard drive anyway when it
+        loads into memory". Yes you do... but consider that large amounts of the instructions will be repeated over
+        and
+        over again (but it only need to be read from the disk once) <br><br>
+      </p>
+    </div>
+  </section>
+
+  <section class="thePic">
+    <img src="images/bruh.png" alt="chart">
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <a href="https://csumb.edu">
+      <img src="images/CSUMB-Logo-Color-Variation_White.jpg" class="icon-style" alt="csumb-logo">
+    </a>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+</body>
+
+</html>
